@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+p {
+    white-space: pre;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,.4);
+    transition: 0.5s;
+}
+
+a:hover {
+    color: yellow;
+    transition: 0.5s;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 10px auto;
+}
+
+.head_logo {
+    width: 15%;
+    height: 85px;
+}
+
+.header {
+    width: 85%;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 5.8px;
+    text-align: right;
+    margin-top: 8px;
+    line-height: 50px;
+}
+
+.sub_head {
+    font-size: 16px;
+    font-weight: 200;
+    text-align: right;
+    letter-spacing: 6px;
+    line-height: 30px;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+}
+
+.hero_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects_head {
+    font-size: 30px;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0 20px 0px;
+}
+
+.projects {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proj, .proj2 {
+    width: calc((100% - 40px)/3);
+    height: max-content;
+    transition: 0.25s;
+    overflow: hidden;
+}
+
+.proj2 {
+    margin: 0 20px;
+}
+
+.proj:hover, .proj2:hover {
+    transition: 0.25s;
+}
+
+.proj:hover > .proj_description, .proj2:hover > .proj_description {
+    background-color: rgba(0,0,0,.2);
+    transition: 0.25s;
+}
+
+.proj:hover > .p1_image, .proj:hover > .p3_image {
+    transform: scale(1.2);
+}
+
+.proj2:hover > .p2_image {
+    transform: scale(1.1);
+}
+
+.p1_image, .p2_image, .p3_image {
+    height: 180px;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    transition: all 0.5s ease;
+}
+
+.p1_image {
+    background-image: url('../images/wander_snip_m.PNG');
+    transform: scale(1.1);
+}
+
+.p2_image {
+    background-image: url('../images/pixelmaker_m.PNG');
+}
+
+.p3_image {
+    background-image: url('../images/story_photo_m.jpg');
+    transform: scale(1.1);
+}
+
+.proj_name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    width: 100%;
+    background-color: rgb(32, 178, 170);
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 8px 0px;
+    position: relative;
+}
+
+.link {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+}
+
+.proj_description {
+    width: 100%;
+    background-color: rgba(0,0,0,.1);
+    height: max-content;
+    position: relative;
+    transition: all 0.5s ease;
+    font-size: 15.5px;
+    line-height: 1.5em;
+    padding: 6px 20px 10px 20px;
+}
+
+.social {
+    width: 100%;
+    height: 30px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+.social a:hover {
+    color: lightseagreen;
+}
+
+@media screen and (max-width: 920px) {
+    .container {
+        width: 90%; 
+        transition: all 0.5s ease;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .head_logo {
+        height: 70px;
+    }
+    .header {
+        height: 65px;
+    }
+    h1 {
+        font-size: 37px; 
+        margin-top: 0; 
+        transition: all 0.25s ease;
+    }
+    .sub_head {
+        font-size: 14px; 
+        letter-spacing: 4px; 
+        line-height: 20px;
+    }
+    .projects {
+        height: max-content;
+    }
+    .projects_head {
+        text-align: center;
+    }
+    .proj, .proj2 {
+        width: 60%; 
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .head_logo {
+        width: max-content; 
+        margin: 0 auto;
+    }
+    .header {
+        height: 55px; 
+        width: 100%; 
+        margin-bottom: 5px; 
+        transition: all 0.25s ease;
+    }
+    h1 {
+        font-size: 24px; 
+        text-align: center; 
+        line-height: 32px; 
+        margin-top: 5px;
+    }
+    .sub_head {
+        font-size: 15px; 
+        letter-spacing: 1.5px; 
+        text-align: center; 
+        line-height: 24px;
+    }
+    .line {
+        height: 3px; 
+        margin: 15px 0px;
+    }
+    .hero {
+        height: 400px; 
+        background-image: url(images/glacier_1_600_bw.jpg);
+    }
+    .projects_head {
+        text-align: center; 
+        font-size: 30px;
+        margin: 20px 0 10px 0px;
+    }
+    .proj, .proj2 {
+        width: 100%;
+    }
+    .proj2 {
+        margin: 10px 0;
+    }
+}
