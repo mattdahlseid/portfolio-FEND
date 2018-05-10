@@ -223,7 +223,7 @@ h1 {
 
 @media screen and (max-width: 560px){
     #head_logo {
-        width: max-content; 
+        width: 25%; 
         margin: 10px auto 5px auto;
     }
     .header {
