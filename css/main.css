@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-@import url(https://weloveiconfonts.com/api/?family=zocial);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
 
 /* zocial */
 [class*="zocial-"]:before {
@@ -100,14 +100,14 @@ h1 {
 }
 
 .proj, .proj2 {
-    width: calc((100% - 40px)/3);
+    width: calc((100% - 40px) * 0.333);
     height: max-content;
     transition: 0.25s;
     overflow: hidden;
 }
 
 .proj2 {
-    margin: 0 20px;
+    margin: 0px 20px;
 }
 
 .proj:hover, .proj2:hover {
