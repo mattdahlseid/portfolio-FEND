@@ -3,13 +3,6 @@
     box-sizing: border-box;
 }
 
-@import url(http://weloveiconfonts.com/api/?family=zocial);
-
-/* zocial */
-[class*="zocial-"]:before {
-    font-family: 'zocial', sans-serif;
-}
-
 body {
     margin: 0;
     font-family: 'Didact Gothic', sans-serif;
@@ -184,12 +177,13 @@ h1 {
     margin: 0 auto 10px auto;
     text-align: center;
     letter-spacing: 10px;
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 .social a:hover {
     color: lightseagreen;
 }
+
 
 @media screen and (max-width: 920px) {
     .container {
